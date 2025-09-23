@@ -1,3 +1,42 @@
 h1 {
     background-color: green;
 }
+
+@font-face {
+  font-family: 'Ancient';
+  src: url('../Fonts/ancient/Ancient Medium.ttf') format('truetype');
+}
+
+.fuente {
+    font-family: 'Ancient';
+}
+
+.parrafo1 {
+    background-color: yellow;
+    padding: 50px 50px 50px 50px;
+}
+
+
+.navegacion-principal li:first-child {
+  background-color: red;
+}
+
+.navegacion-principal li:last-child {
+  background-color: blue;
+}
+
+.parrafo2 {
+    background-color: red;
+    border: 8px;
+    border-style: double;
+    border-color: black;
+    border-radius: 50px;
+}
+
+.lorem2 {
+    margin: 50px;
+}
+
+img{
+    width: 10%;
+}
