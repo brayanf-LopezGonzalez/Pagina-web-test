@@ -46,26 +46,61 @@ img{
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10px;
-    row-gap: 10px;
-    padding: 10px;
+    row-gap: 15px;
+    padding: 15px;
 }
 
 .container > div{
+    grid-template-columns: repeat(3, 1fr);
     background-color: white;
     text-align: center;
+    grid-auto-rows: 100px;
+    gap: 20px;
 }
 
 .nav_grid {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    background: lightblue;
+    grid-column: 1 / -1;
 }
 
 .content_grid {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: span 2;
 }
 
 .sidebar_grid {
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-row: span 3; /* ocupa 3 renglones */
+    grid-column: 3
+}
+
+.footer_grid {
+    grid-column: 1 / -1;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex_container {
+    background-color: darkred;
+    margin: 10px;
+    padding: 20px;
+}
+
+@media print {
+
+    .my_photo{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .my_photo{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .my_photo{
+        width: 80%;
+    }
 }
