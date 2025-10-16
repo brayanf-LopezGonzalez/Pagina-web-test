@@ -1,0 +1,17 @@
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main_container{
+	background-color: black;
+}
+
+.navbar {
+	background-color: yellow;
+}
+
+.navbar > .logo {
+	width: 20%;
+}
